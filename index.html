@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101a48">
+  <meta name="description" content="Una pequeña carta de amor escondida dentro de un sueño nocturno.">
+  <title>Un sueño para mi niña</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" id="sky" aria-hidden="true">
+    <div class="moon"></div>
+    <div class="stars" id="stars"></div>
+    <div class="cloud-layer cloud-layer--back" id="cloudsBack"></div>
+    <div class="cloud-layer cloud-layer--middle" id="cloudsMiddle"></div>
+  </div>
+
+  <div class="envelope-scene" id="envelopeScene">
+    <p class="eyebrow">TE AMOOOOOOOOOOO་⁺₊♡</p>
+    <button class="envelope-button" id="envelopeButton" type="button" aria-expanded="false" aria-controls="dreamScene" aria-label="Abrir el sobre y descubrir el sueño">
+      <span class="envelope envelope--inside" aria-hidden="true"></span>
+      <span class="letter-peek" aria-hidden="true"><img id="envelopeImage" alt="Ilustración romántica que adorna el sobre" draggable="false"></span>
+      <svg class="envelope-folds" viewBox="0 0 300 210" aria-hidden="true" focusable="false">
+        <defs><clipPath id="envelopeClip"><rect x="3" y="3" width="294" height="204" rx="16"></rect></clipPath></defs>
+        <g clip-path="url(#envelopeClip)">
+          <path class="envelope-bottom-fold" d="M 3 207 L 150 103 L 297 207 Z"></path>
+          <path class="envelope-side-folds" d="M 3 3 L 150 103 L 297 3"></path>
+        </g>
+      </svg>
+      <span class="envelope-flap" aria-hidden="true"><svg viewBox="0 0 300 125" preserveAspectRatio="none" focusable="false"><path d="M 3 3 L 297 3 L 150 105 Z"></path></svg></span>
+      <span class="envelope-seal" aria-hidden="true">
+        <svg viewBox="0 0 100 100" focusable="false">
+          <circle class="seal-fill" cx="50" cy="50" r="43"></circle>
+          <circle class="seal-shine" cx="37" cy="34" r="10"></circle>
+          <path class="seal-heart" d="M 50 72 C 44 65 26 55 26 42 C 26 31 39 27 50 39 C 61 27 74 31 74 42 C 74 55 56 65 50 72 Z"></path>
+        </svg>
+      </span>
+      <span class="envelope-outline" aria-hidden="true"></span>
+    </button>
+    <p class="hint">con mucho amor para mi niña mimilona uwu</p>
+  </div>
+
+  <main class="dream-scene" id="dreamScene" aria-hidden="true">
+    <div class="cloud-layer cloud-layer--front" id="cloudsFront" aria-hidden="true"></div>
+    <div class="dream-glow" aria-hidden="true"></div>
+    <section class="dream-composition" aria-label="Una niña durmiendo y soñando con una carta de amor">
+      <div class="dream-clouds" id="dreamClouds" aria-label="Cinco pequeños sueños"></div>
+      <div class="girl-puff-trail" id="girlPuffTrail" aria-hidden="true"></div>
+      <figure class="sleeping-girl">
+        <img id="dreamImage" alt="Una niña durmiendo plácidamente bajo una manta" draggable="false">
+        <figcaption class="sr-only">La niña duerme plácidamente mientras sueña con la carta.</figcaption>
+      </figure>
+    </section>
+    <p class="sr-only" id="announcement" aria-live="polite"></p>
+  </main>
+
+  <noscript><p class="noscript">Esta carta necesita JavaScript para abrirse.</p></noscript>
+  <script src="script.js"></script>
+</body>
+</html>
