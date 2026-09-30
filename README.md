@@ -1,6 +1,6 @@
-# Un sueño para mi niña
+# Un sueño para mi amor
 
-`poema-4` es una pequeña carta romántica interactiva hecha con HTML, CSS y JavaScript vanilla. Primero muestra un sobre cerrado con `1.png`; al tocarlo, aparece una escena nocturna con estrellas, nubes, una niña durmiendo (`2.png`) y una carta dentro de una nube.
+`dreams-letter` es una pequeña carta romántica interactiva hecha con HTML, CSS y JavaScript vanilla. Primero muestra un sobre cerrado con `1.png`; al tocarlo, aparece una escena nocturna con estrellas, nubes, una niña durmiendo (`2.png`) y una carta dentro de una nube.
 
 ## Cómo abrirlo
 
@@ -17,7 +17,7 @@ No hace falta instalar dependencias. La tipografía se carga desde Google Fonts 
 ## Estructura
 
 ```text
-poema-4/
+dreams-letter/
 ├── index.html
 ├── style.css
 ├── script.js
